@@ -1,6 +1,6 @@
 import './App.scss';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";

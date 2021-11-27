@@ -10,14 +10,14 @@ function Header() {
 
     function delayAndGo(e) {
         e.preventDefault();
-        setTimeout(() => navigate("/questions"), 2000);
+        setTimeout(() => navigate("/quiz"), 2000);
     }
 
     return (
         <OutDiv state={state}>
             <div className="text">
                 <h1>GUIA RAPIDA PARA LA IDENTIFICACIÓN DE VIOLENCIA CONTRA LA MUJER</h1>
-                <Link to="/quetions" onClick={delayAndGo}>
+                <Link to="/quiz" onClick={delayAndGo}>
                     <BouncyButton>
                         <button onClick={() => setstate(true)}>INICIA</button>
                     </BouncyButton>
