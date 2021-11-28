@@ -1,26 +1,27 @@
 {
   "files": {
     "main.css": "/Hackaton/static/css/main.ce2c89ca.chunk.css",
-    "main.js": "/Hackaton/static/js/main.82b400a1.chunk.js",
-    "main.js.map": "/Hackaton/static/js/main.82b400a1.chunk.js.map",
+    "main.js": "/Hackaton/static/js/main.303821f8.chunk.js",
+    "main.js.map": "/Hackaton/static/js/main.303821f8.chunk.js.map",
     "runtime-main.js": "/Hackaton/static/js/runtime-main.858f112d.js",
     "runtime-main.js.map": "/Hackaton/static/js/runtime-main.858f112d.js.map",
     "static/css/2.0c99a86c.chunk.css": "/Hackaton/static/css/2.0c99a86c.chunk.css",
-    "static/js/2.97807238.chunk.js": "/Hackaton/static/js/2.97807238.chunk.js",
-    "static/js/2.97807238.chunk.js.map": "/Hackaton/static/js/2.97807238.chunk.js.map",
+    "static/js/2.1c98fd48.chunk.js": "/Hackaton/static/js/2.1c98fd48.chunk.js",
+    "static/js/2.1c98fd48.chunk.js.map": "/Hackaton/static/js/2.1c98fd48.chunk.js.map",
     "index.html": "/Hackaton/index.html",
     "static/css/2.0c99a86c.chunk.css.map": "/Hackaton/static/css/2.0c99a86c.chunk.css.map",
     "static/css/main.ce2c89ca.chunk.css.map": "/Hackaton/static/css/main.ce2c89ca.chunk.css.map",
-    "static/js/2.97807238.chunk.js.LICENSE.txt": "/Hackaton/static/js/2.97807238.chunk.js.LICENSE.txt",
+    "static/js/2.1c98fd48.chunk.js.LICENSE.txt": "/Hackaton/static/js/2.1c98fd48.chunk.js.LICENSE.txt",
     "static/media/10.9e28bf89.png": "/Hackaton/static/media/10.9e28bf89.png",
     "static/media/6.ed5ff81d.png": "/Hackaton/static/media/6.ed5ff81d.png",
+    "static/media/9.53928905.png": "/Hackaton/static/media/9.53928905.png",
     "static/media/font.scss": "/Hackaton/static/media/RoundPop-owwjd.37bf2ea2.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.858f112d.js",
     "static/css/2.0c99a86c.chunk.css",
-    "static/js/2.97807238.chunk.js",
+    "static/js/2.1c98fd48.chunk.js",
     "static/css/main.ce2c89ca.chunk.css",
-    "static/js/main.82b400a1.chunk.js"
+    "static/js/main.303821f8.chunk.js"
   ]
 }
