@@ -36,7 +36,7 @@ export default function Question() {
     };
 
     useEffect(() => {
-        if (parseInt(id) !== pointsState.length && id <= data.length - 1) {
+        if (parseInt(id) !== pointsState.length && parseInt(id) <= data.length - 1) {
             dispatch(resetIncidence());
             dispatch(resetPoints());
             navigate('/');

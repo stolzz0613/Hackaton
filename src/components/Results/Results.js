@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Card, Charts} from './styles';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import {useDispatch, useSelector} from 'react-redux';
-import {useNavigate} from "react-router-dom";
+import {useParams, useNavigate} from "react-router-dom";
 import {
     resetPoints,
     resetIncidence
@@ -11,15 +11,25 @@ import {
 import Thermometer from 'react-thermometer-component'
 import axios from 'axios';
 import Swal from 'sweetalert2';
+import dataJSON from '../Question/data.json';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 export default function Results() {
+    const {id} = useParams();
     const pointsState = useSelector(state => state.points);
     const incidences = useSelector(state => state.incidence);
     const form = useSelector(state => state.data);
     const indidencesNumber = incidences.filter(i => i === true).length;
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if (pointsState.length < dataJSON.length) {
+            dispatch(resetIncidence());
+            dispatch(resetPoints());
+            navigate('/');
+        }
+    }, []);
 
     let summary = {
         psicologica: 0,
