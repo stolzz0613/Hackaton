@@ -3,8 +3,14 @@ import {Card, Charts} from './styles';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import {useDispatch, useSelector} from 'react-redux';
-import {addData} from '../../globalState';
+import {useNavigate} from "react-router-dom";
+import {
+    resetPoints,
+    resetIncidence
+} from '../../globalState';
 import Thermometer from 'react-thermometer-component'
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 export default function Results() {
@@ -13,6 +19,7 @@ export default function Results() {
     const form = useSelector(state => state.data);
     const indidencesNumber = incidences.filter(i => i === true).length;
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     let summary = {
         psicologica: 0,
@@ -54,8 +61,20 @@ export default function Results() {
     };
 
     const submitInfo = () => {
-        dispatch(addData(summary));
-        console.log(form);
+        axios.post('https://nameless-brushlands-25377.herokuapp.com/api/encuestas', {
+            genre: form.genre,
+            fisica: summary.fisica,
+            fisicaSev: summary.fisicaSev,
+            psicologica: summary.psicologica,
+            sexual: summary.sexual
+        })
+            .then(() => Swal.fire('Muchas gracias por contestar el formulario'))
+            .then(() => {
+                dispatch(resetIncidence());
+                dispatch(resetPoints());
+                window.localStorage.setItem('completed', 'true');
+            })
+            .then(() => navigate('/'));
     }
 
     return (
