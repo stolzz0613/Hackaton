@@ -31,6 +31,15 @@ export const OutDiv = styled.div`
         letter-spacing: 5px;
         font-size: 30px;
         width: 500px;
+        select {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            letter-spacing: 3px;
+            height: 40px;
+            margin-bottom: 20px;
+        }
     }
 
     img {
@@ -56,6 +65,21 @@ export const OutDiv = styled.div`
             box-shadow: 0px 15px 20px rgba(106, 212, 195, 0.561);
             color: #fff;
             transform: translateY(-7px);
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .text {
+            font-size: 18px;
+            width: 95%;
+        }
+        img {
+            height: 300px;
+            width: 300px;
         }
     }
 `;

@@ -1,54 +1,73 @@
 [
     {
         "number": 1,
-        "title": "¿Eres hombre o mujer?",
-        "description": "Si no te identificas con ninguno, di que eres mujer, tiene sus ventajas",
-        "answer": [
-            {
-                "title": "Hombre",
-                "to": 1
-            }, {
-                "title": "Mujer",
-                "to": 2
-            }
-        ]
-    },
-    {
-        "number": 3,
-        "title": "LARGO ERES UN AGRESOR"
-    },
-    {
-        "number": 2,
-        "title": "¿Sufres de algún tipo de maltrato?",
-        "description": "Recuerda que puede ser sicologico, economico, fisico, verbal. Tambien puede ser si te mira feo, si no tiene ganas de comer, si ronca.",
+        "title": "¿Le han insultado?",
+        "description": "Se han dirigido hacia usted con malas palabras, gritos o siendo despectivo",
         "answer": [
             {
                 "title": "Si",
-                "to": 4
+                "points": {
+                    "psicologica": 0.7,
+                    "fisica": 0.2,
+                    "fisicaSev": 0,
+                    "sexual": 0.1
+                }
             }, {
-                "title": "No",
-                "to": 3
+                "title": "No"
+            }
+        ]
+    },
+    {
+        "number": 2,
+        "title": "¿Le han rebajado o menospreciado?",
+        "description": "",
+        "answer": [
+            {
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.8,
+                    "fisica": 0.2,
+                    "fisicaSev": 0,
+                    "sexual": 0
+                }
+            }, {
+                "title": "No"
             }
         ]
     },
     {
         "number": 3,
-        "title": "ERES VICTIMA PERO AÚN NO LO SABES",
-        "description": "Recuerda que puede ser sicologico, economico, fisico, verbal. Tambien puede ser si te mira feo, si no tiene ganas de comer, si ronca.",
+        "title": "¿Le ha menospreciado o humillado frente a otras personas?",
+        "description": "",
         "answer": [
             {
-                "title": "QUEDATE CON SU DINERO",
-                "to": 0
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.9,
+                    "fisica": 0.1,
+                    "fisicaSev": 0,
+                    "sexual": 0
+                }
+            }, {
+                "title": "No"
             }
         ]
     },
     {
-        "number": 3,
-        "title": "ERES VICTIMA Y DEBES SENTIRTE ORGULLOSA DE SERLO",
+        "number": 4,
+        "title": "¿Le ha dicho cosas como que sea usted poco atractiva o fea?",
+        "description": "",
         "answer": [
             {
-                "title": "QUEDATE CON SU DINERO",
-                "to": 0
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.6,
+                    "fisica": 0.1,
+                    "fisicaSev": 0,
+                    "sexual": 0.3
+                }
+            }, {
+                "title": "No"
             }
         ]
     }
