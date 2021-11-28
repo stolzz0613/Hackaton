@@ -1,32 +1,40 @@
 [
     {
         "number": 1,
-        "title": "¿Le han insultado?",
-        "description": "Se han dirigido hacia usted con malas palabras, gritos o siendo despectivo",
+        "title": "¿Ha sentido que su trabajo no es reconocido o es subvalorado?",
+        "description": "",
         "answer": [
             {
-                "title": "Si",
+                "title": "Nunca"
+            }, {
+                "title": "A veces",
                 "points": {
-                    "psicologica": 0.7,
+                    "psicologica": 0.3,
                     "fisica": 0.2,
                     "fisicaSev": 0,
-                    "sexual": 0.1
+                    "sexual": 0.0
                 }
-            }, {
-                "title": "No"
+            },{
+                "title": "Siempre",
+                "points": {
+                    "psicologica": 0.7,
+                    "fisica": 0.3,
+                    "fisicaSev": 0,
+                    "sexual": 0.0
+                }
             }
         ]
     },
     {
         "number": 2,
-        "title": "¿Le han rebajado o menospreciado?",
+        "title": "¿Ha sido amenazado(a) en su entorno laboral?",
         "description": "",
         "answer": [
             {
                 "title": "Si",
                 "points": {
-                    "psicologica": 0.8,
-                    "fisica": 0.2,
+                    "psicologica": 0.7,
+                    "fisica": 0.3,
                     "fisicaSev": 0,
                     "sexual": 0
                 }
@@ -37,16 +45,16 @@
     },
     {
         "number": 3,
-        "title": "¿Le ha menospreciado o humillado frente a otras personas?",
+        "title": "¿Ha percibido que sus indicaciones y ordenes no son acatadas o son desobedecidas por ser mujer?",
         "description": "",
         "answer": [
             {
                 "title": "Si",
                 "points": {
-                    "psicologica": 0.9,
-                    "fisica": 0.1,
+                    "psicologica": 0.6,
+                    "fisica": 0.2,
                     "fisicaSev": 0,
-                    "sexual": 0
+                    "sexual": 0.2
                 }
             }, {
                 "title": "No"
@@ -55,16 +63,124 @@
     },
     {
         "number": 4,
-        "title": "¿Le ha dicho cosas como que sea usted poco atractiva o fea?",
+        "title": "¿La empresa donde labora tiene lineamientos estrictos ante situaciones de acoso por parte de un cliente protegiendo primordialmente su integridad?",
         "description": "",
         "answer": [
             {
                 "title": "Si",
                 "points": {
-                    "psicologica": 0.6,
+                    "psicologica": 0.5,
                     "fisica": 0.1,
                     "fisicaSev": 0,
-                    "sexual": 0.3
+                    "sexual": 0.4
+                }
+            }, {
+                "title": "No"
+            }
+        ]
+    },
+    {
+        "number": 5,
+        "title": "¿Siente que su entorno laboral tiene un clima social negativo u hostil en el contexto de una cultura que permite o premia el acoso?",
+        "description": "",
+        "answer": [
+            {
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.4,
+                    "fisica": 0.2,
+                    "fisicaSev": 0.2,
+                    "sexual": 0.2
+                }
+            }, {
+                "title": "No"
+            }
+        ]
+    },
+    {
+        "number": 6,
+        "title": "Alguien en su entorno laboral suele golpear algún objeto cercano a ti, incluyendo una pared, puerta o lanzar objetos de la oficina.",
+        "description": "",
+        "answer": [
+            {
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.4,
+                    "fisica": 0.3,
+                    "fisicaSev": 0.3,
+                    "sexual": 0
+                }
+            }, {
+                "title": "No"
+            }
+        ]
+    },
+    {
+        "number": 7,
+        "title": "Ha sido victima o ha presenciado actos de violencia física como empujones, manotazos o golpes(incluso aquellos leves)?",
+        "description": "",
+        "answer": [
+            {
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.3,
+                    "fisica": 0.4,
+                    "fisicaSev": 0.3,
+                    "sexual": 0
+                }
+            }, {
+                "title": "No"
+            }
+        ]
+    },
+    {
+        "number": 8,
+        "title": "En alguna entrevista de trabajo le han preguntado o insinuado saber el por qué no esta casada, por qué no ha tenido hijos o si piensa tenerlos pronto.",
+        "description": "",
+        "answer": [
+            {
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.3,
+                    "fisica": 0.2,
+                    "fisicaSev": 0,
+                    "sexual": 0.5
+                }
+            }, {
+                "title": "No"
+            }
+        ]
+    },
+    {
+        "number": 9,
+        "title": "¿Ha aceptado ordenes que vaya en contra de sus principios por miedo a perder su trabajo? ",
+        "description": "",
+        "answer": [
+            {
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.2,
+                    "fisica": 0.2,
+                    "fisicaSev": 0,
+                    "sexual": 0.6
+                }
+            }, {
+                "title": "No"
+            }
+        ]
+    },
+    {
+        "number": 10,
+        "title": "¿Han realizado comentarios despectivos respecto a su apariencia física?",
+        "description": "",
+        "answer": [
+            {
+                "title": "Si",
+                "points": {
+                    "psicologica": 0.5,
+                    "fisica": 0.0,
+                    "fisicaSev": 0,
+                    "sexual": 0.5
                 }
             }, {
                 "title": "No"

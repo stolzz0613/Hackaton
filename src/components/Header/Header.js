@@ -28,14 +28,12 @@ function Header() {
         <OutDiv state={state}>
             <div className="text">
                 <Link to="/dashboard">
-                    <BouncyButton>
-                        <button style={{
-                            backgroundColor: 'black',
-                            position: 'absolute',
-                            right: '40px',
-                            top: '40px',
-                        }}>DASHBOARD</button>
-                    </BouncyButton>
+                    <button style={{
+                        backgroundColor: 'black',
+                        position: 'absolute',
+                        right: '40px',
+                        top: '40px',
+                    }}>DASHBOARD</button>
                 </Link>
                 <h1>GUIA RAPIDA PARA LA IDENTIFICACIÓN DE VIOLENCIA CONTRA LA MUJER</h1>
                 <select onChange={(e) => setGenre(e.target.value)}>

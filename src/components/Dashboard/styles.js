@@ -11,6 +11,27 @@ export const Container = styled.div`
     height: 100vh;
     text-align: center;
 
+    button {
+        -webkit-text-stroke: 1px black;
+        background-color: #FFC1EB;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        color: white;
+        font-family: fontTitle;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        height: 50px;
+        width: 200px;
+        &:hover {
+            background-color: #6DC8C2;
+            box-shadow: 0px 15px 20px rgba(106, 212, 195, 0.561);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+    }
+
     img {
         position: absolute;
         width: 800px;
@@ -22,8 +43,12 @@ export const ContainerChart = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
     width: 30%;
     z-index: 3;
+    @media only screen and (max-width: 425px) {
+        width: 90%;
+    }
 `;
 
 export const Charts = styled.div`
@@ -37,4 +62,8 @@ export const Charts = styled.div`
     gap: 50px;
     width: 100%;
     z-index: 3;
+
+    @media only screen and (max-width: 425px) {
+        flex-direction: column;
+    }
 `;
